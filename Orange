@@ -1,0 +1,13 @@
+package Inheritance2;
+
+public class Orange extends Fruit {
+private String colour, location;
+	
+	public Orange(String n, String c, String l) {
+		super(n);
+		this.colour = c;
+		this.location = l;
+		
+		System.out.println("This " + n + " is from "+ this.location + " and its colour is " + this.colour);
+	}
+}
