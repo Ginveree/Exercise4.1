@@ -1,0 +1,21 @@
+package Inheritance2;
+
+public class Banana extends Fruit {
+	private char ripe;
+	
+	public Banana(String n, char r) {
+		super(n);
+		this.ripe = r;	
+	}
+	
+	public char ripe() {
+		if ((this.ripe == 'Y') || (this.ripe == 'y')) 
+			System.out.println("Banana is finally ripe!");	
+		else if ((this.ripe == 'N') || (this.ripe == 'n'))
+		    System.out.println("Banana is not ripe!");
+		else
+			System.out.println("Error!");
+	return ripe;
+	}
+
+}
