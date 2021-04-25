@@ -1,0 +1,21 @@
+package Inheritance2;
+
+public class Apple extends Fruit {
+	private double price;
+	private int quantity;
+	
+	public Apple(String n, int q, double p) {
+		super(n);
+		this.price = p;
+		this.quantity = q;
+		
+		System.out.println(n + " contructor is invoked");
+	}
+	public double totalPrice() {
+		return this.price * this.quantity;
+	}
+	public String toString() {
+		return "The total price for " + this.quantity + " apples is RM " + totalPrice();
+	}
+
+}
