@@ -1,0 +1,22 @@
+package Inheritance2;
+
+public class GreenApple extends Apple {
+    private int gQuan;
+    private double gPrice;
+	
+	public GreenApple(String n, int q, double p, int gC, double gP) {
+		super(n,q,p);
+		this.gQuan = gC;
+		this.gPrice = gP;
+		
+		System.out.println("The total price for " + q + " " + n + "s is RM " + totalPrice());
+	}
+	
+	public double gTotalPrice() {
+		return this.gQuan * this.gPrice;
+	}
+	
+	public String toString() {
+		return "Total price for Green Apples' greeting card is RM " + gTotalPrice();
+	}
+}
