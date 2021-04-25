@@ -1,0 +1,16 @@
+package Inheritance2;
+
+public class RedApple extends Apple {
+	private String taste;
+	
+	public RedApple(String n, int q, double p, String t) {
+		super(n,q,p);
+		this.taste = t;
+		
+		System.out.println("The total price for " + q + " " + n + "s is RM " + totalPrice());
+	}
+	
+	public String toString() {
+		return "Taste: " + this.taste;
+	}
+}
