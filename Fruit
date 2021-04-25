@@ -1,0 +1,10 @@
+package Inheritance2;
+
+public class Fruit {
+	private String name;
+	
+	public Fruit(String n) {
+		this.name = n;
+		System.out.println("Fruit constructor is invoked");
+	}
+}
